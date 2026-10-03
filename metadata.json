@@ -1,0 +1,6 @@
+{
+  "name": "ValidEx",
+  "description": "Proctoring and test delivery portal for students, teachers, and administrators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -93,7 +93,7 @@ export default function App() {
     } finally {
       localStorage.removeItem('validex_user');
       setUser(null);
-      addToast('success', 'Session terminated successfully.');
+      addToast('success', 'Logout successfully.');
     }
   };
 

@@ -462,7 +462,7 @@ export default function LoginForm({ onAuthSuccess, addToast }: LoginFormProps) {
                 <label className="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">Verification Code (OTP)</label>
                 <input
                   type="text"
-                  maxLength={6}
+                  maxLength={5}
                   className="w-full text-center tracking-widest text-[#1a202c] font-mono text-xl py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:border-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600/20 transition-colors"
                   placeholder="&bull;&bull;&bull;&bull;&bull;&bull;"
                   value={otp}

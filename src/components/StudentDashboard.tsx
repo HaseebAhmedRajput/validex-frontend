@@ -93,7 +93,7 @@ export default function StudentDashboard({ user, onLogout, addToast }: StudentDa
             <div className="space-y-2">
               <span className="text-xs font-mono font-bold tracking-widest text-indigo-400 uppercase">  Verified Account</span>
               <h1 className="font-display text-2xl sm:text-3xl font-bold tracking-tight">
-                Welcome back, {user.fullname}
+                Welcome Back, {user.fullname}
               </h1>
               <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-300">
                 <span className="flex items-center gap-1.5"><GraduationCap className="h-4 w-4 text-indigo-400" /> Dept: {user.department}</span>
@@ -108,22 +108,12 @@ export default function StudentDashboard({ user, onLogout, addToast }: StudentDa
               </div>
             </div>
 
-            {/* <button
-              id="join-test-btn"
-              onClick={() => {
-                setTestCodeInput('');
-                setShowJoinModal(true);
-              }}
-              className="bg-indigo-600 border border-indigo-700 hover:bg-indigo-700 hover:border-indigo-800 font-semibold px-6 py-3 rounded-xl flex items-center gap-2 text-sm shadow-indigo-950/20 shadow-md hover:shadow-lg transition-all cursor-pointer select-none"
-            >
-              <Monitor className="h-4 w-4" /> Join Live Examination
-            </button> */}
 
             <button
   id="download-validex-btn"
   onClick={() => {
     window.open(
-      'https://github.com/HaseebAhmedRajput/validex-desktop/releases/latest/download/ValidEx.exe',
+      'https://github.com/HaseebAhmedRajput/validex-desktopApp/releases/latest/download/ValidEx-amd64-installer.exe',
       '_blank'
     );
   }}

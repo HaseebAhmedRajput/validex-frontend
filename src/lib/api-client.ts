@@ -6,9 +6,7 @@ import { log } from 'console';
 // Detect base API URL
 export const getApiUrl = (): string => {
   let url = (import.meta as any).env?.VITE_API_URL;
-  console.log(url);
   
-
   if (url && !url.endsWith('/api/v1')) {
     url = `${url.replace(/\/$/, '')}/api/v1`;
   }

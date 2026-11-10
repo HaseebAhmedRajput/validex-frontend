@@ -120,7 +120,7 @@ export default function StudentDashboard({ user, onLogout, addToast }: StudentDa
     }
 
     // Direct GitHub Release Download URL
-    window.location.href = 'https://github.com/HaseebAhmedRajput/validex-desktop/releases/latest/download/ValidEx-amd64-installer.exe';
+    window.location.href = 'https://github.com/HaseebAhmedRajput/validex-desktop/releases/v1.0.0/download/ValidEx-amd64-installer.exe';
   }}
   className="bg-indigo-600 border border-indigo-700 hover:bg-indigo-700 hover:border-indigo-800 font-semibold px-6 py-3 rounded-xl flex items-center gap-2 text-sm shadow-indigo-950/20 shadow-md hover:shadow-lg transition-all cursor-pointer select-none"
 >

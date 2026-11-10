@@ -109,13 +109,18 @@ export default function StudentDashboard({ user, onLogout, addToast }: StudentDa
             </div>
 
 
-            <button
+         <button
   id="download-validex-btn"
   onClick={() => {
-    window.open(
-      'https://github.com/HaseebAhmedRajput/validex-desktopApp/releases/latest/download/ValidEx-amd64-installer.exe',
-      '_blank'
-    );
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    
+    if (isMobile) {
+      alert("ValidEx Desktop is designed exclusively for Windows PCs. Please open this website on your laptop or desktop computer to download the application.");
+      return;
+    }
+
+    // Direct GitHub Release Download URL
+    window.location.href = 'https://github.com/HaseebAhmedRajput/validex-desktop/releases/latest/download/ValidEx-amd64-installer.exe';
   }}
   className="bg-indigo-600 border border-indigo-700 hover:bg-indigo-700 hover:border-indigo-800 font-semibold px-6 py-3 rounded-xl flex items-center gap-2 text-sm shadow-indigo-950/20 shadow-md hover:shadow-lg transition-all cursor-pointer select-none"
 >
